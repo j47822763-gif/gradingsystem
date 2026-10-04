@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GradeTrack — Login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+<div class="login-shell">
+  <div class="login-brand">
+    <div class="brand-mark">G</div>
+    <div>
+      <h1>GradeTrack</h1>
+      <p>Grading Management System</p>
+    </div>
+  </div>
+  <div class="login-card">
+    <div class="login-heading">
+      <span class="eyebrow">Welcome back</span>
+      <h2>Sign in to your account</h2>
+      <p>Manage students, grades, reports, and class records.</p>
+    </div>
+    <form id="loginForm">
+      <label>Username</label>
+      <input id="username" type="text" placeholder="Enter username" autocomplete="username" required>
+      <label>Password</label>
+      <div class="password-wrap">
+        <input id="password" type="password" placeholder="Enter password" autocomplete="current-password" required>
+        <button type="button" id="togglePassword" class="password-toggle">Show</button>
+      </div>
+      <div id="loginError" class="form-error hidden"></div>
+      <button class="btn btn-primary btn-full" type="submit">Sign In</button>
+    </form>
+    <div class="demo-note">
+      <strong>Demo account</strong><br>
+      Username: <code>admin</code> &nbsp; Password: <code>admin123</code>
+    </div>
+  </div>
+  <p class="login-footer">GradeTrack • Academic Records</p>
+</div>
+<script src="js/auth.js"></script>
+</body>
+</html>
